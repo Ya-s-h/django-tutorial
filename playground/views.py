@@ -7,4 +7,5 @@ from django.http import HttpResponse
 
 # Similar to controller in Express
 def say_hello(request):
-    return HttpResponse("Hello World")
+    return render(request, 'hello.html', {"name": "Yash"})
+
