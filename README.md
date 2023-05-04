@@ -15,18 +15,18 @@ Following [Django Tutorial from Programming With Mosh](https://www.youtube.com/w
     ```
     > django-admin startproject storefront .
     ```
-    By using a ```.``` at the end of the command will not create sub folder, but will help in creating the file structure for this project.
-- Creating Playground folder. It has something to do with database Models, admin Page, request Handler.
+    By using a `.` at the end of the command will not create sub folder, but will help in creating the file structure for this project.
+- Creating Playground folder. It has something to do with `Models`, `admin Page`, `request Handler`.
     ```
     > python manage.py startapp playground
     ```
-    Here, playground is the name of the folder, you can use anything you like.
-- Add playground in the list of INSTALLED_APPS in settings.json
+    Here, `playground` is the name of the folder, you can use anything you like.
+- Add `playground` in the list of INSTALLED_APPS in settings.json
 - Run Server.
     ```
     > python manage.py runserver [PORT]
     ```
-    Note that PORT is an optional parameter, and by default it's value is 8000.
+    Note that `PORT` is an optional parameter, and by default it's value is 8000.
 - Installing django-debug-toolbar
     ```
     > pipenv install django-debug-toolbar
