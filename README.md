@@ -1,5 +1,5 @@
 # django-tutorial
-Following Django Tutorial from Programming With Mosh. 
+Following [Django Tutorial from Programming With Mosh](https://www.youtube.com/watch?v=rHux0gMZ3Eg). 
 
 ## Setup
 - Install a Django in virtual environment.
@@ -21,9 +21,17 @@ Following Django Tutorial from Programming With Mosh.
     > python manage.py startapp playground
     ```
     Here, playground is the name of the folder, you can use anything you like.
-
+- Add playground in the list of INSTALLED_APPS in settings.json
 - Run Server.
     ```
     > python manage.py runserver [PORT]
     ```
     Note that PORT is an optional parameter, and by default it's value is 8000.
+- Installing django-debug-toolbar
+    ```
+    > pipenv install django-debug-toolbar
+    ```
+- Add `django-debug-toolbar` in the list of `INSTALLED_APPS` in `settings.py`
+- Add MIDDLEWARE for `django-debug-toolbar` in `settings.py`
+- Update main urls.py to include `debug_toolbar`
+- Change values for `INTERNAL_IPS` in settings.py when not using local development. (Refer [Docs](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html))
