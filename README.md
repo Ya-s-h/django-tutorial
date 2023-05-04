@@ -35,3 +35,13 @@ Following [Django Tutorial from Programming With Mosh](https://www.youtube.com/w
 - Add MIDDLEWARE for `django-debug-toolbar` in `settings.py`
 - Update main urls.py to include `debug_toolbar`
 - Change values for `INTERNAL_IPS` in settings.py when not using local development. (Refer [Docs](https://django-debug-toolbar.readthedocs.io/en/latest/installation.html))
+
+## Database Design
+![](/repo-resources/M1.png?raw=true "Relation between Product, Cart and CartItem")
+- In the above image, `CartItem` is a Association Class, between the many-to-many relation of `Product` and `Cart`. You can understand this better by consider `Cart` similar to something like wishlist in E-Commerce Website.
+
+![](/repo-resources/M1(1).png?raw=true "To better understand the above image")
+
+![](/repo-resources/M3.png?raw=true "Relation between Product, Customer, Order and OrderItem")
+
+For this project, both anonymous and registered user can create a Cart but only a registered User can Create an Order
